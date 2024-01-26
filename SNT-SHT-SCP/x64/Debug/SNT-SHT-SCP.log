@@ -1,2 +1,5 @@
-﻿  Main.cpp
-  SNT-SHT-SCP.vcxproj -> D:\SNT-SHT-SCP\x64\Debug\SNT-SHT-SCP.exe
+﻿  Source.cpp
+D:\University_STU\Nam2\PrimeNumber_CompeleteNumber_OrthographyNumber\SNT-SHT-SCP\Source.cpp(25,14): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  SNT-SHT-SCP.vcxproj -> D:\University_STU\Nam2\PrimeNumber_CompeleteNumber_OrthographyNumber\x64\Debug\SNT-SHT-SCP.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

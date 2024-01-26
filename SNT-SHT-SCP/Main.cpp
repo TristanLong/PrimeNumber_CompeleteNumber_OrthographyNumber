@@ -2,27 +2,27 @@
 
 int main()
 {
-    int n;
-    cout << "Nhap n: " << endl;
-    cin >> n;
+    int number;
+    cout << "Enter number: ";
+    cin >> number;
 
     system("cls");
-    if (isPrime(n))
-        cout << n << " la SNT " << endl;
+    if (isPrime(number))
+        cout << number << " is prime number " << endl;
     else
-        cout << n << " khong la SNT " << endl;
+        cout << number << " isn't prime number " << endl;
 
 
-    if (isCompleteNumber(n))
-        cout << n << " la SHT " << endl;
+    if (isCompleteNumber(number))
+        cout << number << " is complete number " << endl;
     else
-        cout << n << " khong la SHT " << endl;
+        cout << number << " isn't complete number " << endl;
 
 
-    if (isOrthography(n))
-        cout << n << " la SCP " << endl;
+    if (isOrthography(number))
+        cout << number << " is orthography " << endl;
     else
-        cout << n << " khong la SCP " << endl;
+        cout << number << " isn't orthography " << endl;
 
     return 0;
 }

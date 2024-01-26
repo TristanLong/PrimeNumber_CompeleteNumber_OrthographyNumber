@@ -1,54 +1,27 @@
-
-/*
-SNT: (prime) la so chi chia het cho 1 va chinh no
-SHT: (complete number) tong cac uoc so nho hon no bang chinh no
-SCP: (orthography) can bac 2 cua no la so nguyen
+﻿/*
+SNT: (prime) là số chỉ chia hết cho 1 và chính nó 
+SHT: (complete number) tổng các ước số nhỏ hơn nó bằng số đó 
+SCP: (orthography) căn bậc 2 là số nguyên 
 */
-
 #include "Header.h"
 
-bool isPrime(int n)
-{
-    if (n < 2)
-    {
-        return false;
+bool isPrime(int number) {
+    for (int i = 2; i <= sqrt(number); i++) {
+        if (number % i == 0) return false;
     }
-    else
-    {
-        for (int i = 2; i <= sqrt(n); i++)
-        {
-            if (n % i == 0)
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
+    return number > 1;
 }
 
-
-
-bool isCompleteNumber(int n)
-{
-    int s = 0;
-
-    for (int i = 1; i <= n / 2; i++)
-    {
-        if (n % i == 0)
-        {
-            s += i;
-        }
+bool isCompleteNumber(int number) {
+    int sum = 0;
+    for (int i = 1; i <= sqrt(number); i++) {
+        if (number % i == 0)
+            sum += i;
     }
-
-    return (s == n) ? true : false;
+    return sum == number;
 }
 
-
-
-bool isOrthography(int n)
-{
-    int root = sqrt(n);
-
-    return (root * root == n) ? true : false;
+bool isOrthography(int number) {
+    int root = sqrt(number);
+    return pow(root,2) == number;
 }
